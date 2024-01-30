@@ -17,7 +17,7 @@ function displayPosts(data) {
                 <img src="assets/images/${blogPost.image[1]}" srcset="assets/images/${blogPost.image[0]}" alt="handmade pink macrame wallhanging with raffia details">
                 <div class="desc">
                     <p>${blogPost.title}</p>
-                    <img class="info-icon" onclick="displayInfo()" src="assets/icons/icon-info-cloud-desktop.svg" alt="click here to see picture describtion">
+                    <img class="info-icon" onclick="displayInfo(this)" src="assets/icons/icon-info-cloud-desktop.svg" alt="click here to see picture describtion">
                 </div>
                 <div class="desc-text">${blogPost.body}</div>
         `
@@ -26,36 +26,13 @@ function displayPosts(data) {
     })
 }
 
-// click info icon
-
-    // let infoIcons = document.querySelectorAll('.info-icon');
-
-    // infoIcons.forEach(infoIcon => {
-    //     infoIcon.addEventListener('click', function(event) {
-    //         event.preventDefault
-    //         displayInfo();
-    //     });
-    // });
-
-function displayInfo() {
-    let text = document.querySelector('.desc-text');
-    let desc = document.querySelector('p');
-    let banner = document.querySelector('.desc');
-    if (text.style.display === "none") {
-        text.style.display = "block";
-    } else {
-        text.style.display = "none";
-    }
-
-    if (desc.style.opacity === "0") {
-        desc.style.opacity = "1";
-    } else {
-        desc.style.opacity = "0";
-    }
-
-    if (banner.style.backgroundColor === 'transparent') {
-        banner.style.backgroundColor = "var(--KC-brownhover)";
-    } else {
-        banner.style.backgroundColor = 'transparent';
-    }
+// display description
+function displayInfo(icon) {
+    const text = icon.parentElement.nextElementSibling;
+    const desc = icon.parentElement.querySelector("p");
+    const banner = icon.parentElement;
+  
+    text.style.display = text.style.display === "none" ? "block" : "none";
+    desc.style.opacity = desc.style.opacity === "0" ? "1" : "0";
+    banner.style.backgroundColor = banner.style.backgroundColor === "transparent" ? "var(--KC-brownhover)" : "transparent";
 }

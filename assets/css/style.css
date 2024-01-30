@@ -35,7 +35,7 @@
     aspect-ratio: 1 / 1;
 }
 
-.projects-image-container > .blog-post:hover{
+/* .projects-image-container > .blog-post:hover{
     .desc {
         background-color: var(--KC-brownhover);
 
@@ -49,7 +49,7 @@
         display: block;
         margin-bottom: 2rem;
     }
-}
+} */
 
 
 .desc {
