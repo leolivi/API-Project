@@ -35,23 +35,6 @@
     aspect-ratio: 1 / 1;
 }
 
-/* .projects-image-container > .blog-post:hover{
-    .desc {
-        background-color: var(--KC-brownhover);
-
-        p {
-            opacity: 1;
-        }
-
-    }
-
-    .desc-text {
-        display: block;
-        margin-bottom: 2rem;
-    }
-} */
-
-
 .desc {
     display: grid;
     grid-template-columns: 6fr 0.5fr;

@@ -76,15 +76,6 @@ h3 {
 }
 
 
-
-/* Landingpage Projects */
-
-.projects-landingpage > p {
-    font-size: clamp(var(--nav-mobile-size), 3vw, var(--navigation-size));
-    font-family: var(--heading-font);
-    color: var(--KC-orange);
-}
-
 /* Projects Page */
 .infotext {
     color: var(--KC-orange);
@@ -100,12 +91,6 @@ h3 {
 
 .desc-text {
     color: var(--text-color);
-    font-family: var(--body-font);
-    font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
-}
-
-.Etsy-Link {
-    color: var(--KC-orange);
     font-family: var(--body-font);
     font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
 }
