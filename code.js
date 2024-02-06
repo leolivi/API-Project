@@ -1,48 +1,61 @@
 // API Async Request
 getData();
 
-async function getData () {
-	const response = await fetch("assets/api/data.json")
-	const data = await response.json();
+async function getData() {
+  // get data from json file
+  const response = await fetch("assets/api/data.json");
+  const data = await response.json();
 
-    // muss ausgeführt werden!
-    displayPosts(data);
+  // muss ausgeführt werden!
+  displayPosts(data);
 }
 
 function displayPosts(data) {
-    data.forEach(blogPost => {
-        const container = document.createElement("div")
-        container.classList.add("blog-post")
-        const template = `
+  const imageContainer = document.querySelector(".projects-image-container");
+  data.forEach((blogPost) => {
+    const container = document.createElement("div");
+    container.classList.add("blog-post");
+    // create template string for data to be inserted
+    // add mouseover, onclick and onmouseleave attributes
+    const template = `
                 <img src="assets/images/${blogPost.image[1]}" srcset="assets/images/${blogPost.image[0]}" alt="handmade pink macrame wallhanging with raffia details">
-                <div class="desc">
-                    <p>${blogPost.title}</p>
-                    <img class="info-icon" onmouseover="displayInfo(this)" onclick="displayInfo(this)" onmouseleave="removeInfo(this)" src="assets/icons/icon-info-cloud-desktop.svg" alt="click here to see picture describtion">
+                <div class="desc" style="background-color: transparent;">
+                    <p style="opacity: 0;">${blogPost.title}</p>
+                    <img class="info-icon" onmouseover="displayInfo(this)" onclick="displayInfo(this)" onmouseleave="removeInfo(this)" src="assets/icons/icon-info-cloud-desktop.svg" alt="click here to see picture blogpostTitleribtion">
                 </div>
-                <div class="desc-text">${blogPost.body}</div>
-        `
-        container.innerHTML = template;
-        document.querySelector(".projects-image-container").appendChild(container);
-    })
+                <div class="desc-text" style="display: none;">${blogPost.body}</div>
+        `;
+    // add template string to container
+    container.innerHTML = template;
+    imageContainer.appendChild(container);
+  });
 }
 
-// display description
+// display blogpost description
 function displayInfo(icon) {
-    const text = icon.parentElement.nextElementSibling;
-    const desc = icon.parentElement.querySelector("p");
-    const banner = icon.parentElement;
-  
-    text.style.display = text.style.display === "none" ? "block" : "none";
-    desc.style.opacity = desc.style.opacity === "0" ? "1" : "0";
-    banner.style.backgroundColor = banner.style.backgroundColor === "transparent" ? "var(--KC-brownhover)" : "transparent";
+  // select elements within blog-post to be styled / made visible
+  const descriptionText = icon.parentElement.nextElementSibling;
+  const blogpostTitle = icon.parentElement.querySelector("p");
+  const backgroundBanner = icon.parentElement;
+
+  // display blogpostTitleription if hover or click happens
+  descriptionText.style.display =
+    descriptionText.style.display === "none" ? "block" : "none";
+  blogpostTitle.style.opacity = blogpostTitle.style.opacity === "0" ? "1" : "0";
+  backgroundBanner.style.backgroundColor =
+    backgroundBanner.style.backgroundColor === "transparent"
+      ? "var(--KC-brownhover)"
+      : "transparent";
 }
 
 function removeInfo(icon) {
-    const text = icon.parentElement.nextElementSibling;
-    const desc = icon.parentElement.querySelector("p");
-    const banner = icon.parentElement;
-  
-    text.style.display = "none";
-    desc.style.opacity = "0";
-    banner.style.backgroundColor = "transparent";
+  // select elements to be styled / made unvisible
+  const descriptionText = icon.parentElement.nextElementSibling;
+  const blogpostTitle = icon.parentElement.querySelector("p");
+  const backgroundBanner = icon.parentElement;
+
+  // remove blogpostTitleription if mouse moves away
+  descriptionText.style.display = "none";
+  blogpostTitle.style.opacity = "0";
+  backgroundBanner.style.backgroundColor = "transparent";
 }

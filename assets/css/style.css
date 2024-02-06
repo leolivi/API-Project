@@ -1,177 +1,177 @@
 /* Projects Overview */
 .projects-section {
-    padding: 10rem 6rem;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
+  padding: 10rem 6rem;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
 }
 
 .projects-section h2 {
-    padding-bottom: 4rem;
+  padding-bottom: 4rem;
 }
 
 .projects-image-container {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
 }
 
 .projects-image-container > .blog-post {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .projects-image-container > .blog-post > img {
-    -o-object-fit: cover;
-       object-fit: cover;
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1 / 1;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
 }
 
 .desc {
-    display: grid;
-    grid-template-columns: 6fr 0.5fr;
-    padding: 0 1rem;
-    transform: translateY(-3rem);
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-    background-color: transparent;
+  display: grid;
+  grid-template-columns: 6fr 0.5fr;
+  padding: 0 1rem;
+  transform: translateY(-3rem);
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  background-color: transparent;
 
-    .info-icon {
-        height: auto;
-        width: 2rem;
-        object-fit: fill;
-        cursor: pointer;
-    }
+  .info-icon {
+    height: auto;
+    width: 2rem;
+    object-fit: fill;
+    cursor: pointer;
+  }
 
-    p {
-        width: auto;
-        opacity: 0;
-    }
+  p {
+    width: auto;
+    opacity: 0;
+  }
 }
 
 .desc-text {
-    display: none;
+  display: none;
 }
 
-.infotext{
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-align: center;
-            align-items: center;
-    margin-top: 5rem;
-    gap: 0.5rem;
-    -webkit-hyphens: auto;
-        -ms-hyphens: auto;
-            hyphens: auto;
+.infotext {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-top: 5rem;
+  gap: 0.5rem;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
 .Etsy-Link {
-    -webkit-text-decoration: underline 2px var(--KC-orange);
-            text-decoration: underline 2px var(--KC-orange);
-    font-weight: bolder;
+  -webkit-text-decoration: underline 2px var(--KC-orange);
+  text-decoration: underline 2px var(--KC-orange);
+  font-weight: bolder;
 }
 
 .Etsy-Link:link {
-    color: var(--KC-orange);
+  color: var(--KC-orange);
 }
 
 .Etsy-Link:visited {
-    color: var(--KC-orange);
+  color: var(--KC-orange);
 }
 
 .infotext img {
-    height: 2rem;
-    -o-object-fit: fill;
-       object-fit: fill;
-    width: auto;
+  height: 2rem;
+  -o-object-fit: fill;
+  object-fit: fill;
+  width: auto;
 }
 
 /* Responsive Projects Section */
-@media screen and (max-width:1200px) {
-    .projects-section {
-        padding: 10rem 2rem;
-        display: -webkit-box;
-        display: flex;
-        -webkit-box-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-                align-items: center;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-                flex-direction: column;
-    }
+@media screen and (max-width: 1200px) {
+  .projects-section {
+    padding: 10rem 2rem;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 1050px) {
-    .projects-image-container {
-        display: grid;
-        gap: 2rem;
-        grid-template-columns: 1fr;
-    }
+  .projects-image-container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+  }
 }
 
-@media screen and (max-width:850px) {
-    .projects-section {
-        padding: 10rem 2rem;
-        display: -webkit-box;
-        display: flex;
-        -webkit-box-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-                align-items: center;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-                flex-direction: column;
-    }
+@media screen and (max-width: 850px) {
+  .projects-section {
+    padding: 10rem 2rem;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+  }
 
-    .projects-section h2 {
-        padding-bottom: 2rem;
-    }
+  .projects-section h2 {
+    padding-bottom: 2rem;
+  }
 
-    .projects-image-container img, source{
-        width: 100%;
-    }
+  .projects-image-container img,
+  source {
+    width: 100%;
+  }
 
-    .info-icon {
-        height: 1.7rem;
-        width: auto;
-        -o-object-fit: fill;
-           object-fit: fill;
-    }
+  .info-icon {
+    height: 1.7rem;
+    width: auto;
+    -o-object-fit: fill;
+    object-fit: fill;
+  }
 }
 
-@media screen and (max-width:450px) {
-    .desc {
-        display: grid;
-        grid-template-columns: 4fr 0.5fr;
+@media screen and (max-width: 450px) {
+  .desc {
+    display: grid;
+    grid-template-columns: 4fr 0.5fr;
 
     .infotext {
-        font-size: 1.5rem;
+      font-size: 1.5rem;
     }
+  }
+
+  .Etsy-Link {
+    font-size: 1.5rem;
+    align-self: flex-start;
+    margin-left: 3rem;
+  }
 }
 
-    .Etsy-Link {
-        font-size: 1.5rem;
-        align-self: flex-start;
-        margin-left: 3rem;
+@media screen and (max-width: 400px) {
+  .desc {
+    transform: translateY(-3.5rem);
+    p {
+      padding-right: 2rem;
     }
-} 
-
-@media screen and (max-width:400px) {
-    .desc {
-        transform: translateY(-3.5rem);
-        p {
-          padding-right: 2rem;  
-        }
-        
-    }
+  }
 }

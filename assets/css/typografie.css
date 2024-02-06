@@ -1,17 +1,17 @@
 /*Typografie*/
 @font-face {
-    font-family: Opificio;
-    src: url(../fonts/opificio/Opificio_Bold_rounded.ttf);
+  font-family: Opificio;
+  src: url(../fonts/opificio/Opificio_Bold_rounded.ttf);
 }
 
 @font-face {
-    font-family: Helvetica;
-    src: url(../fonts/Helvetica/Helvetica-01.ttf);
+  font-family: Helvetica;
+  src: url(../fonts/Helvetica/Helvetica-01.ttf);
 }
 
 @font-face {
-    font-family: Helvetica Bold;
-    src: url(../fonts/Helvetica/Helvetica-Bold.ttf);
+  font-family: Helvetica Bold;
+  src: url(../fonts/Helvetica/Helvetica-Bold.ttf);
 }
 
 /* Headings and Fonts */
@@ -23,76 +23,67 @@
 } */
 
 h1 {
-    font-family: var(--heading-font);
-    font-size: clamp(var(--header-mobile-size), 10vw, var(--header-size)) ;
-    line-height: 1.5;
-    color: var(--KC-orange);
+  font-family: var(--heading-font);
+  font-size: clamp(var(--header-mobile-size), 10vw, var(--header-size));
+  line-height: 1.5;
+  color: var(--KC-orange);
 }
 
 h2 {
-    font-family: var(--heading-font);
-    font-size: clamp(var(--h3-mobile-size), 5vw, var(--h3-size));
-    color: var(--KC-orange);
-    text-align: center;
+  font-family: var(--heading-font);
+  font-size: clamp(var(--h3-mobile-size), 5vw, var(--h3-size));
+  color: var(--KC-orange);
+  text-align: center;
 }
 
 h3 {
-    font-family: var(--bold-body-font);
-    font-size: clamp(var(--nav-mobile-size), 3vw, var(--navigation-size));
-    color: var(--text-color);
-    color: var(--KC-orange);
+  font-family: var(--bold-body-font);
+  font-size: clamp(var(--nav-mobile-size), 3vw, var(--navigation-size));
+  color: var(--text-color);
+  color: var(--KC-orange);
 }
 
-/* nav */ .teaser {
-    font-family: var(--heading-font);
-    font-size: clamp(var(--nav-mobile-size), 5vw, var(--navigation-size));
-    color: var(--KC-orange);
+/* nav */
+.teaser {
+  font-family: var(--heading-font);
+  font-size: clamp(var(--nav-mobile-size), 5vw, var(--navigation-size));
+  color: var(--KC-orange);
 }
 
-/* blocktext */ p {
-    font-family: var(--body-font);
-    font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
-    color: var(--text-color);
-    line-height: 150%;
+/* blocktext */
+p {
+  font-family: var(--body-font);
+  font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
+  color: var(--text-color);
+  line-height: 150%;
 }
 
 /* Header */
-.main-header{
-    font-family: var(--heading-font);
-    color: var(--KC-orange);
+.main-header {
+  font-family: var(--heading-font);
+  color: var(--KC-orange);
 }
 
 /* Navigation */
-.main-nav{
-    font-size: var(--navigation-size);
+.main-nav {
+  font-size: var(--navigation-size);
 }
-
-/* Landingpage Homepage*/
-
-#main-landingpage > p{
-    font-family: var(--heading-font);
-    font-size: clamp(var(--nav-mobile-size), 3vw, var(--navigation-size));
-    color: var(--KC-orange);
-}
-
 
 /* Projects Page */
 .infotext {
-    color: var(--KC-orange);
-    font-family: var(--body-font);
-    font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
+  color: var(--KC-orange);
+  font-family: var(--body-font);
+  font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
 }
 
 .desc {
-    color: var(--text-color);
-    font-family: var(--body-font);
-    font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
+  color: var(--text-color);
+  font-family: var(--body-font);
+  font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
 }
 
 .desc-text {
-    color: var(--text-color);
-    font-family: var(--body-font);
-    font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
+  color: var(--text-color);
+  font-family: var(--body-font);
+  font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
 }
-
-
